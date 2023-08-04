@@ -52,7 +52,6 @@
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  margin-bottom: 90px;
   // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
@@ -106,6 +105,9 @@
       cursor: pointer;
     }
   }
+}
+.container{
+  margin-top: 90px;
 }
 form {
   display: flex;

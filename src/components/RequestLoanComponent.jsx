@@ -24,8 +24,8 @@ const RequestLoanComponent = () => {
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json; charset=UTF-8',
+          'Access-Control-Allow-Origin': 'https://okigwecreations.online/api/',
         },
         body: JSON.stringify(formData),
       });

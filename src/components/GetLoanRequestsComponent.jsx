@@ -4,7 +4,7 @@ const GetLoanRequestsComponent = () => {
   const [loanRequests, setLoanRequests] = useState([]);
 
   useEffect(() => {
-    const apiUrl = `https://okigwecreations.online/api/get_all_loan_request`;
+    const apiUrl = `https://okigwecreations.online/api/`;
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -13,7 +13,7 @@ const GetLoanRequestsComponent = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>List of all loan requests</h1>
       <ul>
         {loanRequests.map((loanRequest) => (
