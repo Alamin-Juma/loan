@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const RequestLoanComponent = () => {
   const [formData, setFormData] = useState({
+    action: '',
     full_name: '',
     loan_amount: '',
     repayment_duration: '',
@@ -31,7 +32,6 @@ const RequestLoanComponent = () => {
 
       if (response.ok) {
         const responseData = await response.json();
-        // Handle the response data here
         console.log('Loan request successful:', responseData);
       } else {
         console.error('Error requesting loan:', response.status);
