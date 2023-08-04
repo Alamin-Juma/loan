@@ -6,13 +6,13 @@ import {
   Route,
 } from "react-router-dom";
 
-import { RequestLoanComponent, GetLoanRequestsComponent, RepaymentSchedule, Navbar } from './components';
+import { RequestLoanComponent, GetLoanRequestsComponent, RepaymentSchedule, NavBar } from './components';
 
 function App() {
   return (
   
     <Router>
-        <Navbar/>
+        <NavBar/>
       <Routes>
         <Route exact path="/" element={<RequestLoanComponent />} />
         <Route path="/loan-requests" element={<GetLoanRequestsComponent/>} />

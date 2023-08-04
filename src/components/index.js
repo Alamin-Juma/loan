@@ -1,12 +1,12 @@
 import RequestLoanComponent from './RequestLoanComponent';
 import GetLoanRequestsComponent from './GetLoanRequestsComponent';
 import RepaymentSchedule from './RepaymentSchedule';
-import Navbar from './NavBar';
+import NavBar from './NavBar';
 
 export {
     RequestLoanComponent,
     GetLoanRequestsComponent,
     RepaymentSchedule,
-    Navbar
+    NavBar
 }
 
