@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 
 import {
   BrowserRouter as Router,
@@ -6,11 +6,13 @@ import {
   Route,
 } from "react-router-dom";
 
-import { RequestLoanComponent, GetLoanRequestsComponent, RepaymentSchedule } from './components';
+import { RequestLoanComponent, GetLoanRequestsComponent, RepaymentSchedule, Navbar } from './components';
 
 function App() {
   return (
+  
     <Router>
+        <Navbar/>
       <Routes>
         <Route exact path="/" element={<RequestLoanComponent />} />
         <Route path="/loan-requests" element={<GetLoanRequestsComponent/>} />

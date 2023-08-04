@@ -1,0 +1,153 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 999;
+  display: flex;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 90px;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  img {
+    width: 130px;
+    height: 50px;
+  }
+  .left-items {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: #4a5568; /* Default text color */
+      transition: color 0.2s ease-in-out; /* Transition effect for hover */
+      opacity: 1;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+      letter-spacing: 0.025em;
+    }
+    a:hover {
+      cursor: pointer;
+      color: #805ad5; /* Text color on hover */
+    }
+    button {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      margin-right: 35px;
+      font-weight: 600;
+      font-size: 17px;
+      background-color: #0d0452;
+      color: #eeedf3;
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      height: 3rem;
+      transition: 0.2s;
+      border-radius: 0.35em;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      -webkit-border-radius: 0.35em;
+      -moz-border-radius: 0.35em;
+      -ms-border-radius: 0.35em;
+      -o-border-radius: 0.35em;
+    }
+    button:hover {
+      background-color: var(--toastify-color-warning);
+      cursor: pointer;
+    }
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+}
