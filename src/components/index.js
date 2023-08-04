@@ -1,7 +1,7 @@
 import RequestLoanComponent from './RequestLoanComponent';
 import GetLoanRequestsComponent from './GetLoanRequestsComponent';
 import RepaymentSchedule from './RepaymentSchedule';
-import Navbar from './Navbar';
+import Navbar from './NavBar';
 
 export {
     RequestLoanComponent,
